@@ -30,8 +30,8 @@ body{
 }
 
 .grid{
-    max-height: 400px;
-    max-width: 700px;
+    max-height: 105vh;
+    max-width: 105vh;
     background-color: var(--white);
     border-radius: 5px;
     overflow: hidden;
@@ -44,6 +44,9 @@ body{
     max-width: 100%;
     display: inherit;
 }
+.card-title, .price{
+    font-family: Fraunces;
+}
 .card-body{
     padding: 30px;
     display: flex;
@@ -51,7 +54,7 @@ body{
     justify-content: space-between;
 }
 .card-subtitle, .card-title, .card-text, .price, .btn{
-    flex: 1;
+    /* flex: 1; */
 }
 
 .card-subtitle{
@@ -61,7 +64,7 @@ body{
     font-weight: 500;
 }
 .card-title, .card-text{
-    font-family: 'Fraunces', serif;
+    /* font-family: 'Fraunces', serif; */
     /* font-size: 14px; */
 }
 .card-title{
@@ -90,6 +93,7 @@ body{
     text-decoration: line-through;
 }
 .btn{
+    /* border: solid red; */
     /* text-align: center; */
     width: 100%;
     padding: 0 25%;
@@ -108,11 +112,11 @@ body{
     background-color: var(--dark-cyan-hover);
 }
 .btn .cta{
-    border: solid 1px red;
+    /* border: solid 1px red; */
     
         /* margin:0 auto !important; */
         white-space: nowrap;
-        margin: 0;
+        /* margin: 0; */
         width: 100% !important;
         display: flex;
         align-items: center;
