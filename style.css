@@ -19,6 +19,9 @@ body{
     font-size: 14px;
 
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .container{
     /* border:solid 1px; */
@@ -47,6 +50,10 @@ body{
     flex-direction: column;
     justify-content: space-between;
 }
+.card-subtitle, .card-title, .card-text, .price, .btn{
+    flex: 1;
+}
+
 .card-subtitle{
     text-transform: uppercase;
     color: var(--dark-grayish-blue);
@@ -84,7 +91,8 @@ body{
 }
 .btn{
     /* text-align: center; */
-    padding: auto;
+    width: 100%;
+    padding: 0 25%;
     background-color: var(--dark-cyan);
     color: var(--white);
     border: none;
@@ -100,16 +108,18 @@ body{
     background-color: var(--dark-cyan-hover);
 }
 .btn .cta{
-    /* border: solid 1px red; */
-
-/* margin:0 auto !important; */
-width: 100%;
-    display: flex;
-    align-items: center;
-    /* justify-content: space-around */
-}
+    border: solid 1px red;
+    
+        /* margin:0 auto !important; */
+        white-space: nowrap;
+        margin: 0;
+        width: 100% !important;
+        display: flex;
+        align-items: center;
+        /* justify-content: space-around */
+    }
  .cta img {
-    padding: 10px;
+    padding: 5px;
 }
 
 /* @media only screen and (max-width: 450px) { */
@@ -135,11 +145,7 @@ width: 100%;
         /* display: block; */
     }
 }
-.d-flex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 @media only screen and (max-width: 350px) {
     .card-img img{
         max-height: 150px;
