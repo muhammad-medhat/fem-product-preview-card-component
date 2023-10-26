@@ -1,0 +1,15 @@
+.container {
+  padding: 1.25rem 1.5625rem;
+  margin: 0 auto 2.875rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background: var(--cream);
+  max-width: 100%;
+  min-height: 100%;
+}
+@media (min-width: 30rem) {
+  .container {
+    padding: 10rem 24rem;
+  }
+}
