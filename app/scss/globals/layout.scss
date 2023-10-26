@@ -1,0 +1,24 @@
+@use "../util" as *;
+
+.container {
+  padding: rem(20) rem(25);
+  margin: 0 auto rem(46);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background: var(--cream);
+  max-width: 100%; //rem(180);
+  min-height: 100%;
+  @include breakpoint(small) {
+    // background-color: blue;
+  }
+  @include breakpoint(medium) {
+    // background-color: green;
+
+    // max-width: 200vh;
+    padding: 10rem 24rem;
+  }
+  @include breakpoint(large) {
+    // background-color: red;
+  }
+}
